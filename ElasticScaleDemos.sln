@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BlogDb", "BlogDb\BlogDb.sqlproj", "{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ShardManager", "ShardManager\ShardManager.sqlproj", "{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShardManagement", "ShardManagement\ShardManagement.csproj", "{6F97B1A4-79A0-483C-B7E2-1EAFAB661690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DdrDemo", "DdrDemo\DdrDemo.csproj", "{1859DBFC-A57B-4830-B501-086CD2B1004C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsqDemo", "MsqDemo\MsqDemo.csproj", "{00E90A98-B9C6-4948-8C47-C01DC7D5D174}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F0F2F8-9BC2-4DCA-A541-6CD400E69262}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2828A6EF-5695-4ED6-9F00-F3D3F4429DFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6F97B1A4-79A0-483C-B7E2-1EAFAB661690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F97B1A4-79A0-483C-B7E2-1EAFAB661690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F97B1A4-79A0-483C-B7E2-1EAFAB661690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F97B1A4-79A0-483C-B7E2-1EAFAB661690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1859DBFC-A57B-4830-B501-086CD2B1004C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1859DBFC-A57B-4830-B501-086CD2B1004C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1859DBFC-A57B-4830-B501-086CD2B1004C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1859DBFC-A57B-4830-B501-086CD2B1004C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E90A98-B9C6-4948-8C47-C01DC7D5D174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E90A98-B9C6-4948-8C47-C01DC7D5D174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E90A98-B9C6-4948-8C47-C01DC7D5D174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E90A98-B9C6-4948-8C47-C01DC7D5D174}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D53BBD4-A003-4F46-8548-7B2EF74E55F6}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
+	EndGlobalSection
+EndGlobal
