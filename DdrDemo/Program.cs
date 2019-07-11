@@ -42,7 +42,7 @@ namespace DdrDemo {
 
             SqlDatabaseUtils.SqlRetryPolicy.ExecuteAction(() => {
                 using (var db = new ElasticScaleContext<int>(sharding.ShardMap, _firstTenantId, connStrBldr.ConnectionString)) {
-                    var blog = new Blog { Name = name };
+                    var blog = new Blog { Name = name, BlogId = _firstTenantId };
                     db.Blogs.Add(blog);
                     db.SaveChanges();
                 }
@@ -70,7 +70,7 @@ namespace DdrDemo {
 
             SqlDatabaseUtils.SqlRetryPolicy.ExecuteAction(() => {
                 using (var db = new ElasticScaleContext<int>(sharding.ShardMap, _secondTenantId, connStrBldr.ConnectionString)) {
-                    var blog = new Blog { Name = name2 };
+                    var blog = new Blog { Name = name2, BlogId = _secondTenantId };
                     db.Blogs.Add(blog);
                     db.SaveChanges();
                 }
@@ -96,7 +96,7 @@ namespace DdrDemo {
 
             //SqlDatabaseUtils.SqlRetryPolicy.ExecuteAction(() => {
             //    using (var db = new ElasticScaleContext<int>(sharding.ShardMap, _thirdTenantId, connStrBldr.ConnectionString)) {
-            //        var blog = new Blog { Name = name3 };
+            //        var blog = new Blog { Name = name3 , BlogId = _thirdTenantId};
             //        db.Blogs.Add(blog);
             //        db.SaveChanges();
             //    }

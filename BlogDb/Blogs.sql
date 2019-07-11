@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Blogs](
-	[BlogId] [int] IDENTITY(1,1) NOT NULL,
+	[BlogId] [int]  NOT NULL,
 	[Name] [nvarchar](max) NULL,
 	[Url] [nvarchar](max) NULL,
  CONSTRAINT [PK_dbo.Blogs] PRIMARY KEY CLUSTERED 

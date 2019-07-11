@@ -3,10 +3,12 @@
 
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DdrDemo {
     public class Blog {
+
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int BlogId { get; set; }
 
         public string Name { get; set; }
