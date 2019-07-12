@@ -2,7 +2,7 @@
 
 Samples from my talk at ONETUG about Building Scalable Cloud Databases
 
-##Getting Started
+## Getting Started
 
 1. Publish a copy of the ShardManager database to SQL Server. I'd suggest naming the database BlogShardManager as this is the name defined in the samples. You can of course name the database something else, just be sure to update `_shardMapManagerDb` in the samples with the name you've chosen.
 
