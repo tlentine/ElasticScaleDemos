@@ -9,11 +9,12 @@ using Microsoft.Azure.SqlDatabase.ElasticScale.Query;
 namespace MsqDemo {
     class Program {
 
-        private static string _shardServer = "orion\\sql2k17";
+
+        private static string _shardServer = "YourSQLServerInstanceHere";
         private static string _shardMapManagerDb = "BlogShardManager";
 
-        private static string _userName = "ONETUG_DEMO_USER";
-        private static string _pasword = "do_not_do_this$";
+        private static string _userName = "YourDBUserHere";
+        private static string _pasword = "YourPasswordHere";
         private static string _applicationName = "ONETUG_DEMO";
 
         private static int _firstTenantId = 14;
