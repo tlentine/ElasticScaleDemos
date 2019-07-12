@@ -10,11 +10,11 @@ namespace DdrDemo {
 
         //Very bad, don't ever do this...
 
-        private static string _shardServer = "orion\\sql2k17";
+        private static string _shardServer = "YourSQLServerInstanceHere";
         private static string _shardMapManagerDb = "BlogShardManager";
 
-        private static string _userName = "ONETUG_DEMO_USER";
-        private static string _pasword = "do_not_do_this$";
+        private static string _userName = "YourDBUserHere";
+        private static string _pasword = "YourPasswordHere";
         private static string _applicationName = "ONETUG_DEMO";
 
         private static int _firstTenantId = 14;
@@ -96,7 +96,7 @@ namespace DdrDemo {
 
             //SqlDatabaseUtils.SqlRetryPolicy.ExecuteAction(() => {
             //    using (var db = new ElasticScaleContext<int>(sharding.ShardMap, _thirdTenantId, connStrBldr.ConnectionString)) {
-            //        var blog = new Blog { Name = name3 , BlogId = _thirdTenantId};
+            //        var blog = new Blog { Name = name3, BlogId = _thirdTenantId };
             //        db.Blogs.Add(blog);
             //        db.SaveChanges();
             //    }
