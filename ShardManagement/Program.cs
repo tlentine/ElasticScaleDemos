@@ -42,22 +42,22 @@ namespace ShardManagement
             // re-create and populate the shard map from scratch every time.
             Console.WriteLine("Checking for existing shard map and creating new shard map if necessary.");
 
-            var sharding = new ShardManager(_shardServer, _shardMapManagerDb, connStrBldr.ConnectionString);
+            var shardManager = new ShardManager(_shardServer, _shardMapManagerDb, connStrBldr.ConnectionString);
 
 
             //Shard 1 will contain tenants 14, 47
             Console.WriteLine($"Registering first Shard {_shardDb1} with tenant:{_firstTenantId.ToString()}");
-            sharding.RegisterNewShard(_shardServer, _shardDb1, connStrBldr.ConnectionString, _firstTenantId);
+            shardManager.RegisterNewShard(_shardServer, _shardDb1, connStrBldr.ConnectionString, _firstTenantId);
 
             Console.WriteLine($"Registering first Shard {_shardDb1} with tenant:{_thirdTenantId.ToString()}");
-            sharding.RegisterNewShard(_shardServer, _shardDb1, connStrBldr.ConnectionString, _thirdTenantId);
+            shardManager.RegisterNewShard(_shardServer, _shardDb1, connStrBldr.ConnectionString, _thirdTenantId);
 
             //Shard 2 will contain tenants 29, 65
             Console.WriteLine($"Registering second Shard {_shardDb2} with tenant:{_secondTenantId.ToString()}");
-            sharding.RegisterNewShard(_shardServer, _shardDb2, connStrBldr.ConnectionString, _secondTenantId);
+            shardManager.RegisterNewShard(_shardServer, _shardDb2, connStrBldr.ConnectionString, _secondTenantId);
 
             Console.WriteLine($"Registering second Shard {_shardDb2} with tenant:{_fourthTenantId.ToString()}");
-            sharding.RegisterNewShard(_shardServer, _shardDb2, connStrBldr.ConnectionString, _fourthTenantId);
+            shardManager.RegisterNewShard(_shardServer, _shardDb2, connStrBldr.ConnectionString, _fourthTenantId);
 
 
             Console.WriteLine("Press any key to exit...");
