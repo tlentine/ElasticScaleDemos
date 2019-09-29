@@ -17,10 +17,10 @@ namespace MsqDemo {
         private static string _pasword = "YourPasswordHere";
         private static string _applicationName = "ONETUG_DEMO";
 
-        private static int _firstTenantId = 14;
-        private static int _secondTenantId = 29;
-        private static int _thirdTenantId = 47;
-        private static int _fourthTenantId = 65;
+        private static int _firstTenantId = 1;
+        private static int _secondTenantId = 3;
+        private static int _thirdTenantId = 2;
+        private static int _fourthTenantId = 4;
 
         static void Main(string[] args) {
 

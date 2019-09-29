@@ -21,11 +21,10 @@ namespace ShardManagement
         private static string _shardDb1 = "BlogShard1";
         private static string _shardDb2 = "BlogShard2";
 
-
-        private static int _firstTenantId = 14;
-        private static int _secondTenantId = 29;
-        private static int _thirdTenantId = 47;
-        private static int _fourthTenantId = 65;
+        private static int _firstTenantId = 1;
+        private static int _secondTenantId = 3;
+        private static int _thirdTenantId = 2;
+        private static int _fourthTenantId = 4;
 
         static void Main(string[] args) {
 
